@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title> 
+    <link rel="stylesheet" href="./css/main.css">
+    <style>
+        .tabs {
+            width: 400px;
+            margin: 50px auto;
+        }
+
+        .tabs__item {
+            display: inline-block;
+            margin-right: 20px;
+            position: relative;
+        }
+
+        .tabs__link {
+            display: block;
+            width: 100px;
+            height: 50px;
+            border: 2px solid black;
+            border-radius: 7px;
+            background: green;
+        }
+
+        .tabs__item--active .tabs__link {
+            background: blue;
+        }
+
+        .tabs__shape {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #fff;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+
+        .tabs__item--active .tabs__shape {
+            border-radius: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="tabs">
+        <li class="tabs__item">
+            <a href="#" class="tabs__link"></a>
+            <div class="tabs__shape"></div>
+        </li>
+        <li class="tabs__item tabs__item--active">
+            <a href="#" class="tabs__link"></a>
+            <div class="tabs__shape"></div>
+        </li>
+        <li class="tabs__item">
+            <a href="#" class="tabs__link"></a>
+            <div class="tabs__shape"></div>
+        </li>
+    </ul>
+</body>
+</html>
